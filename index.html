@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grammar AI Chat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .chatbox {
+      width: 400px;
+      height: 500px;
+      background-color: #fff;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .chatbox .header {
+      background-color: #3498db;
+      padding: 15px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .chatbox .messages {
+      padding: 20px;
+      height: 350px;
+      overflow-y: auto;
+    }
+
+    .chatbox .messages .message {
+      margin-bottom: 15px;
+    }
+
+    .chatbox .messages .message .user {
+      font-weight: bold;
+      color: #3498db;
+    }
+
+    .chatbox .messages .message .bot {
+      color: #555;
+    }
+
+    .chatbox .input-container {
+      padding: 15px;
+      border-top: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .chatbox input[type="text"] {
+      width: 70%;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .chatbox input[type="submit"] {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .chatbox input[type="submit"]:hover {
+      background-color: #297fb8;
+    }
+
+    .note {
+      font-size: 12px;
+      color: red;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chatbox">
+    <div class="header">
+      Grammar AI Chat
+    </div>
+    <div class="messages">
+      <div class="message">
+        <span class="bot">AI: </span>
+        <span class="content">Welcome to the Grammar AI Chat.</span>
+      </div>
+    </div>
+    <div class="input-container">
+      <input type="text" placeholder="Enter your message" />
+      <input type="submit" value="Send" />
+    </div>
+  </div>
+  <p class="note">Note: Grammatical accuracy may not be guaranteed, and spelling mistakes may occur.</p>
+</body>
+</html>
